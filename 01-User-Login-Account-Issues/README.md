@@ -29,3 +29,58 @@ Reset password and confirmed account was enabled.
 
 ## Outcome
 User successfully logged in.
+# Lab 01 – User Login & Account Issues
+
+## Scenario
+User was unable to log in to their Windows 11 computer.
+
+## Environment
+- OS: Windows 11 Home
+- Account Type: Local User
+- Tools: Command Prompt
+
+## Issue Identified
+User account was disabled.
+
+## Troubleshooting Steps
+1. Verified user existence using `net user`
+2. Created user account
+3. Disabled account to simulate issue
+4. Re-enabled account using Command Prompt
+
+## Commands Used
+```cmd
+net user
+net user jdoe Password123 /add
+net user jdoe /active:no
+net user jdoe /active:yes
+## Issue Encountered
+User account name contained a space, causing initial command failure.
+
+## Resolution
+Used quotation marks around the username to properly execute the command.
+
+Example:
+```cmd
+net user "John Doe" /active:no
+### Issue Encountered
+User account did not appear on Windows 11 sign-in screen.
+
+### Root Cause
+Windows hides local accounts that have never logged in.
+
+### Resolution
+Manually logged in using "Other user" and initialized profile.
+### Behavior Observed
+When a user account is disabled, Windows removes it from the sign-in screen.
+
+### Reason
+Disabled accounts are hidden by design for security purposes.
+
+### Verification Method
+Used `net user "John Doe"` to confirm account active status.
+
+### Resolution
+Re-enabled account using:
+```cmd
+net user "John Doe" /active:yes
