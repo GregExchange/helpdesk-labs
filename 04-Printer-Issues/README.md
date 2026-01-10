@@ -53,3 +53,4 @@ Printer resumed normal operation.
 - Printer troubleshooting
 - Service management
 - End-user support
+Note: Microsoft Print to PDF was unavailable in this VM image. Microsoft XPS Document Writer was used as the virtual printer.
