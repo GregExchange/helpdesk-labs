@@ -1,31 +1,3 @@
-# Active Directory & GPO Basics – Help Desk Lab
-
-## Scenario
-User account requires management within a domain environment.
-
-## Environment
-- OS: Windows Server (conceptual or VM)
-- Tools: Active Directory Users & Computers, Group Policy Management
-
-## Tasks Performed
-1. Created a user account in AD.
-2. Reset and unlocked user password.
-3. Moved user to correct OU.
-4. Reviewed applied Group Policies.
-
-## Concepts Demonstrated
-- Active Directory structure
-- Organizational Units (OU)
-- Group Policy Objects (GPO)
-- Account lifecycle management
-
-## Skills Demonstrated
-- AD fundamentals
-- GPO awareness
-- Enterprise user support
-
-## Outcome
-User account properly managed within domain policies.
 # Lab 10 – Active Directory & GPO Basics
 
 ## Scenario
@@ -41,12 +13,20 @@ Create and manage domain users and groups, apply a Group Policy, and verify enfo
 - Tools: ADUC, Group Policy Management
 
 ## Steps Performed
-1. Created OU structure
-2. Created domain user and security group
-3. Added user to group
-4. Created and linked a GPO
-5. Joined client to domain
-6. Applied and verified GPO using gpupdate/gpresult
+1. Static IP address
+2. Rename server to DC01
+3. Install Active Directory Domain Services
+4. Promote this server to Domain Controller
+5. Created OU structure
+6. User created in OU
+7. Group Created
+8. Group Membership
+9. GPO Linked
+10. Policy Enable
+11. Configure DNS on Client
+12. Domain join success
+13. GP result GPO Applied
+14. Test policy block message
 
 ## Outcome
 User account was successfully managed within Active Directory and policies were enforced.
