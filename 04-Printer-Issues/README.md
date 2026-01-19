@@ -1,37 +1,23 @@
-# Lab 04 – Printer Issues (Windows 11 Pro)
+## Lab 04 – Printer Issues Troubleshooting
 
-## Scenario
-User reports documents are not printing and print jobs appear stuck or paused.
+### Scenario
+User reports printer is not printing on a Windows 11 system.
 
-## Objective
-Restore printer functionality by diagnosing printer status, restarting the Print Spooler, clearing stuck print jobs, and confirming successful printing.
+### User Actions
+- Verified printer was selected correctly
+- Attempted to print a test document
 
-## Environment
-- OS: Windows 11 Pro
-- Account Type: Local User (Tier 1)
-- Account Type: Administrator (Tier 2)
-- Tools Used: Settings, Print Queue, Services (Print Spooler)
+### Admin Actions
+- Opened Services management console
+- Restarted the Print Spooler service
+- Cleared the print queue directory
+- Verified printer functionality was restored
 
-## Troubleshooting Steps
+### Resolution
+Restarting the Print Spooler service cleared the issue and restored printing functionality.
 
-### Tier 1 – User Actions
-1. Verified printer power and connection
-2. Confirmed correct printer was selected
-3. Identified paused printer / stuck print jobs
-4. Attempted test print and confirmed failure
-
-### Tier 2 – Administrator Actions
-5. Restarted the Print Spooler service
-6. Cleared stuck print queue
-7. Verified printer status returned to Ready
-8. Printed test document successfully
-
-## Resolution
-The issue was caused by a stalled Print Spooler service and stuck print jobs. Restarting the service and clearing the queue restored printing functionality.
-
-## Evidence
-Screenshots included:
-- Printer queue showing stuck jobs
-- Print Spooler service restart
-- Printer status restored
-- Successful test print
+### Key Skills Demonstrated
+- Windows 11 printer troubleshooting
+- Service management
+- Print Spooler administration
+- Helpdesk-level incident resolution
