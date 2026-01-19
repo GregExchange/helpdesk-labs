@@ -48,3 +48,11 @@ net start wuauserv
 net start bits
 net start cryptsvc
 net start msiserver
+```
+
+## Root Cause
+Corrupted or stuck Windows Update components prevented updates from installing.  
+Windows Update initially failed due to VM network configuration preventing internet access. Issue was resolved by correcting the VM’s network adapter settings.
+
+## Notes
+This lab was completed in a virtualized environment. Network configuration limitations in the VM initially prevented Windows Update from accessing Microsoft update services.
