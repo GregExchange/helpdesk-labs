@@ -1,54 +1,37 @@
-Lab 04 – Printer Issues (Windows 11 Pro)
-Overview
+# Lab 04 – Printer Issues (Windows 11 Pro)
 
-This lab demonstrates troubleshooting a common helpdesk issue where a user reports a printer is not printing. The issue was resolved using a Tier 1 (User) to Tier 2 (Administrator) support workflow.
-
-Scenario
+## Scenario
 User reports documents are not printing and print jobs appear stuck or paused.
 
-Objective
-Restore printer functionality on Windows 11 Pro by diagnosing printer status, restarting the Print Spooler, clearing the print queue, and validating successful printing.
+## Objective
+Restore printer functionality by diagnosing printer status, restarting the Print Spooler, clearing stuck print jobs, and confirming successful printing.
 
-Environment
+## Environment
+- OS: Windows 11 Pro
+- Account Type: Local User (Tier 1)
+- Account Type: Administrator (Tier 2)
+- Tools Used: Settings, Print Queue, Services (Print Spooler)
 
-Windows 11 Pro
+## Troubleshooting Steps
 
-Local User (initial troubleshooting)
+### Tier 1 – User Actions
+1. Verified printer power and connection
+2. Confirmed correct printer was selected
+3. Identified paused printer / stuck print jobs
+4. Attempted test print and confirmed failure
 
-Administrator (service-level resolution)
+### Tier 2 – Administrator Actions
+5. Restarted the Print Spooler service
+6. Cleared stuck print queue
+7. Verified printer status returned to Ready
+8. Printed test document successfully
 
-Tools: Settings, Print Queue, Services (Print Spooler)
+## Resolution
+The issue was caused by a stalled Print Spooler service and stuck print jobs. Restarting the service and clearing the queue restored printing functionality.
 
-Troubleshooting Summary
-
-Tier 1 – User Actions
-
-Verified printer status
-
-Identified paused printer / stuck jobs
-
-Attempted printing and confirmed failure
-
-Tier 2 – Admin Actions
-
-Restarted Print Spooler service
-
-Cleared stuck print queue
-
-Resumed printer and printed test page
-
-Root Cause
-Paused printer and blocked Print Spooler queue prevented documents from printing.
-Resolution
-
-Print Spooler restarted, queue cleared, and printer functionality successfully restored.
-
-Skills Demonstrated
-
-Helpdesk printer troubleshooting
-
-Tier 1 escalation and Tier 2 resolution
-
-Windows Print Spooler management
-
-Professional IT documentation
+## Evidence
+Screenshots included:
+- Printer queue showing stuck jobs
+- Print Spooler service restart
+- Printer status restored
+- Successful test print
